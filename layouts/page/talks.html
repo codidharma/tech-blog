@@ -1,0 +1,15 @@
+{{- define "main" }}
+{{- $s := .Site.Params }}
+{{- $p := .Params }}
+
+<div class="wrap content">
+  <div class="row">
+    <div >
+      <img style="height:50% align-centre"  src="{{ absURL $s.talks.bannerLocation }}">
+  </div>
+    <div class="post_content">
+      {{- .Content }}
+    </div>
+  </div>
+</div>
+{{- end }}

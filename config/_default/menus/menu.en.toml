@@ -1,0 +1,54 @@
+
+
+[[main]]
+  name = "Blog"
+  url = "posts"
+  weight = -109
+
+
+[[main]]
+  name = "Talks"
+  url = "talks/"
+  weight = -107
+
+
+
+
+# social menu links
+[[social]]
+  name="youtube"
+  type = "social"
+  weight = 1
+  url = "https://www.youtube.com/@codidharma"
+
+[[social]]
+  name = "github"
+  type = "social"
+  weight = 2
+  url = "https://github.com/codidharma"
+[[social]]
+  name = "twitter"
+  weight = 3
+  url = "https://twitter.com/codidharma"
+[[social]]
+  name = "linkedin"
+  weight = 4
+  url = "https://www.linkedin.com/in/mandar-dharmadhikari"
+[[social]]
+  name = "rss"
+  weight = 5
+  url = "index.xml"
+
+# other supported social links
+# name = "youtube"
+# url = "https://www.youtube.com/#"
+# name = "facebook"
+# url = "https://facebook.com/#"
+# name = "instagram"
+# url = "https://instagram.com/#"
+# name = "stackoverflow"
+# url = "https://stackoverflow.com/#"
+# name = "gitlab"
+# url = "https://gitlab.com/#"
+# name = "discord"
+# url = "https://discord.gg/#"
