@@ -185,3 +185,27 @@ message = "💻 Your Weekly Guide to Software Engineering Calmness! Each week I 
   title = "Subscribe to Codidharma's Newsletter"
   content = """💻 Your Weekly Guide to Software Engineering Calmness! Each week I present a topic on systems design, development practices and software engineering in general. 
   No jargon, no fluff—just straightforward insights with a touch of my opinions."""
+
+[newsletter.techstack]
+enable = true
+
+
+  [[newsletter.techstack.items]]
+    title = "Serverless Computing"
+    image="/images/tech/serverless.svg"
+
+  [[newsletter.techstack.items]]
+    title = "Software Architecture"
+    image="/images/tech/softwarearch.svg"
+
+  [[newsletter.techstack.items]]
+    title = "Engineering Management"
+    image="/images/tech/engmanager.svg"
+
+  [[newsletter.techstack.items]]
+    title = "Python"
+    image="/images/tech/python.svg"
+
+  [[newsletter.techstack.items]]
+    title = ".NET Core Platform"
+    image="/images/tech/netcore.svg"

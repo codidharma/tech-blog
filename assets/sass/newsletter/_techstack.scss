@@ -1,0 +1,44 @@
+#techstack a {
+  text-decoration: none;
+}
+
+#techstack h3 {
+  color: var(--text-secondary-color) !important;
+}
+
+#techstack .card {
+  cursor: context-menu;
+  background-color: var(--secondary-color) !important;
+  border-radius: 1rem;
+  
+  /* transform: translate3d(0, 0, 0); */
+  
+  border: 2px solid transparent;
+}
+
+#techstack a.card {
+  cursor: alias;
+}
+
+#techstack .card h5 {
+  color: var(--text-color) !important;
+  opacity: 0.9;
+}
+
+#techstack .card:hover {
+  border: 2px solid var(--text-color);
+  transition: .3s;
+}
+#techstack .card:focus {
+  border: 2px solid var(--text-color);
+  transition: .3s;
+}
+
+#techstack .card-text {
+  background-color: var(--secondary-color) !important;
+  color: var(--text-secondary-color) !important;
+}
+
+#techstack .img-thumbnail{
+  height: 65px;
+}
