@@ -1,6 +1,7 @@
 
 {{- $rp := .Site.Params.newsletter.recentIssues}}
 {{ if $rp.enable | default false }}
+
 {{ $recentPostsPath := $rp.folder | default "posts" }}
 {{ $recentPostsCount := $rp.maxCountToShow | default 3 }}
 {{ $recentPosts := where .Site.RegularPages "Section" $recentPostsPath | first $recentPostsCount }}
@@ -8,37 +9,13 @@
   <div class="container py-3">
     <h1 class="text-center bg-transparent">{{$rp.title}}</h1>
     <div class="px-0 px-md-5 px-lg-5">
-      <div class="row justify-content-center">
+      <ul id="posts" class="posts">
         {{ range $recentPosts }}
-        <div class="col-lg-4 col-md-6 pt-2">
-          <div class="card h-100">
-            <div class="card-header">
-              <a href="{{.Permalink}}" class="card-title">
-                  {{with .Resources.GetMatch (.Params.thumbnail)}}
-                  <img src="{{.Permalink}}" class="card-img-top">
-                  {{end}}
-              </a>
-            </div>
-            <div class="card-body bg-transparent p-3">
-              <a href="{{ .RelPermalink }}" class="primary-font card-title">
-                <h5 class="card-title bg-transparent" title="{{ .Title }}">{{ .Title | truncate 60 }}</h5>
-              </a>
-              <div class="card-text">
-                <p>{{.Summary | truncate 150}}</p>
-              </div>
-            </div>
-            <div class="mt-auto card-footer">
-              <div class="text-center">
-                <button class="button">
-                    <a href="{{ .Permalink }}">{{$rp.action}}</a>
-                </button>
-            </div>
-            </div>
-          </div>
-        </div>
-
+          {{ partial "excerpt" . }}
         {{end}}
-      </div>
+      </ul>
+      
+
     </div>
     <div class="text-center mt-auto pt-3">
         <button class="button">
