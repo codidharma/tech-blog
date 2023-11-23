@@ -176,6 +176,6 @@ username = "azcert"
 
 
 [subscribe.sidebar]
-heading = "Subscribe to Codidharma Newsletter"
-message = "Join the growing community of software enthusiasts as we embark on a learning journey in software development and architecture"
+heading = "Subscribe to Codidharma's Newsletter"
+message = "💻 Your Weekly Guide to Software Engineering Calmness! Each week I present a topic on systems design, development practices and software engineering in general. No jargon, no fluff—just straightforward insights with a touch of my opinions."
 
