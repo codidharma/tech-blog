@@ -1,0 +1,32 @@
+{{- $intro := .Site.Params.newsletter.intro}}
+
+<section id="intro" class="py-5">
+  <div class="container mt-1 py-5">
+    <div class="row justify-content-center ">
+      <div class="col-sm-12 col-md-12 col-lg-4">
+        <div class="row justify-content-center image text-center">
+          <img src="{{ absURL $intro.image }}"
+                          class="img-thumbnail mx-auto"
+                          alt=""
+                      >
+          </div>
+      </div>
+      <div class="col-sm-12 col-md-12 col-lg-8 content">
+        <div>
+            <h1>{{ $intro.title}}</h1>
+        </div>
+        <div>
+            <p>
+                {{$intro.content | markdownify}}
+            </p>
+        </div>
+        <form id="subscribe-side-form" method="post" action= "https://tinyletter.com/" class="mt-1" target="_blank">
+            <div class="mb-1">
+                <input type="email" id="email-sidebar" value="" placeholder="email@example.com" class="search_field form_field" />
+            </div>
+            <button class="button" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
