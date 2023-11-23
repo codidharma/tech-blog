@@ -1,14 +1,15 @@
 {{ $s := site.Params }}
-
-<div>
-    <h2 class="mt-4">{{$s.subscribe.sidebar.heading}}</h2>
-</div>
-<div >
-    {{$s.subscribe.sidebar.message}}
-</div>
-<form id="subscribe-side-form" method="post" action= "https://tinyletter.com/{{$s.tinyletter.username}}" class="mt-1" target="_blank">
-    <div class="mb-1">
-        <input type="email" id="email-sidebar" value="" placeholder="email@example.com" class="search_field form_field" />
+<div id="subscribersidebar">
+    <div>
+        <h2 class="mt-4">{{$s.subscribe.sidebar.heading}}</h2>
     </div>
-    <button class="button" type="submit">Subscribe</button>
-</form>
+    <div >
+        {{$s.subscribe.sidebar.message}}
+    </div>
+    <form id="subscribe-side-form" method="post" action= "https://tinyletter.com/{{$s.tinyletter.username}}" class="mt-1" target="_blank">
+        <div class="mb-1">
+            <input type="email" id="email-sidebar" value="" placeholder="email@example.com" class="search_field form_field" />
+        </div>
+        <button class="button" type="submit">Subscribe</button>
+    </form>
+</div>

@@ -180,6 +180,11 @@ heading = "Subscribe to Codidharma's Newsletter"
 message = "💻 Your Weekly Guide to Software Engineering Calmness! Each week I present a topic on systems design, development practices and software engineering in general. No jargon, no fluff—just straightforward insights with a touch of my opinions."
 
 
+[subscribe.footer]
+heading = "Subscribe to Codidharma's Newsletter"
+message = "💻 Your Weekly Guide to Software Engineering Calmness! Each week I present a topic on systems design, development practices and software engineering in general. No jargon, no fluff—just straightforward insights with a touch of my opinions."
+
+
 [newsletter.intro]
   image = "/images/WelcomeImage.png"
   title = "Subscribe to Codidharma's Newsletter"
@@ -209,3 +214,14 @@ enable = true
   [[newsletter.techstack.items]]
     title = ".NET Core Platform"
     image="/images/tech/netcore.svg"
+
+[newsletter.recentIssues]
+  enable = true
+  folder="posts"
+  maxCountToShow = 6
+  title = "Recent Newsletter issues"
+  action="Read More"
+  postUrl= "posts"
+  morepostsText = "Explore other newsletter issues"
+
+
