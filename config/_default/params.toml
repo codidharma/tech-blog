@@ -176,20 +176,19 @@ username = "azcert"
 
 
 [subscribe.sidebar]
-heading = "Subscribe to Codidharma's Newsletter"
-message = "Join our growing community"
+heading = "Codidharma's Weekly Newsletter"
+message = "Subscribe to cultivate serenity in your code"
 
 
 [subscribe.footer]
-heading = "Subscribe to Codidharma's Newsletter"
-message = "Join our growing community"
+heading = "Codidharma's Weekly Newsletter"
+message = "Subscribe to cultivate serenity in your code"
 
 
 [newsletter.intro]
   image = "/images/WelcomeImage.png"
-  title = "Subscribe to Codidharma's Newsletter"
-  content = """💻 Your Weekly Guide to Software Engineering Calmness! Each week I present a topic on systems design, development practices and software engineering in general. 
-  No jargon, no fluff—just straightforward insights with a touch of my opinions."""
+  title = "Unveil the Serenity of Software Engineering!"
+  content = """ The weekly newsletter to unveil the secrets of harmonious software architecture, development, and engineering. Subscribe to cultivate serenity in your code"""
 
 [newsletter.techstack]
 enable = true
