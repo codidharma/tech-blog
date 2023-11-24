@@ -172,7 +172,7 @@ bannerLocation = "images/talks/banner.jpg"
 
 #Newsletter integration with tinyletter
 [tinyletter]
-username = "azcert"
+username = "codidharma"
 
 
 [subscribe.sidebar]

@@ -1,4 +1,5 @@
 {{- $intro := .Site.Params.newsletter.intro}}
+{{- $tinyletter := .Site.Params.tinyletter -}}
 
 <section id="intro" class="py-5">
   <div class="container mt-1 py-5">
@@ -20,7 +21,7 @@
                 {{$intro.content | markdownify}}
             </p>
         </div>
-        <form id="subscribe-side-form" method="post" action= "https://tinyletter.com/" class="mt-1" target="_blank">
+        <form id="subscribe-side-form" method="post" action= "https://tinyletter.com/{{$tinyletter.username}}" class="mt-1" target="_blank">
             <div class="mb-1">
                 <input type="email" id="email-sidebar" value="" placeholder="email@example.com" class="search_field form_field" />
             </div>
