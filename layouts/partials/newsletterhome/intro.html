@@ -3,6 +3,9 @@
 
 <section id="intro" class="py-5">
   <div class="container mt-1 py-5">
+    <div class="text-center">
+      <h1>Welcome to the Codidharma Weekly!</h1>
+    </div>
     <div class="row justify-content-center ">
       <div class="col-sm-12 col-md-12 col-lg-4">
         <div class="row justify-content-center image text-center">
@@ -11,25 +14,14 @@
       </div>
       <div class="col-sm-12 col-md-12 col-lg-8 content">
         <div>
-          <h1>{{ $intro.title}}</h1>
+          <h2>{{ $intro.title}}</h2>
         </div>
         <div>
           <p>
             {{$intro.content | markdownify}}
           </p>
         </div>
-        <form id="subscribe-side-form" class="mt-1" method="post"
-          action="https://tinyletter.com/{{$tinyletter.username}}" target="popupwindow"
-          onsubmit="window.open('https://tinyletter.com/{{$tinyletter.username}}', 'popupwindow', 'scrollbars=yes,width=800,height=600'); return true">
-          <div class="mb-1">
-            <input type="text" name="email" id="tlemail" placeholder="email@example.com"
-              class="search_field form_field" />
-          </div>
-          <div>
-            <input type="hidden" value="1" name="embed" />
-          </div>
-          <input type="submit" value="Subscribe" class="button" />
-        </form>
+        {{- partial "embedsubscriberform" . -}}
       </div>
     </div>
   </div>

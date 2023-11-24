@@ -1,5 +1,4 @@
-{{- $subform := .Site.Params.subscribe.footer }}
-{{- $tinyletter := .Site.Params.tinyletter -}}
+{{- $subform := .Site.Params.subscribe.secondary }}
 <section id="subscriberfooter" class="py-5">
   <div class="container mt-1 py-5">
     <div class="row justify-content-center ">
@@ -12,12 +11,7 @@
                 {{$subform.message | markdownify}}
             </p>
         </div>
-        <form id="subscribe-side-form" method="post" action= "https://tinyletter.com/{{$tinyletter.username}}" class="mt-1" target="_blank">
-            <div class="mb-1">
-                <input type="email" id="email-sidebar" value="" placeholder="email@example.com" class="search_field form_field" />
-            </div>
-            <button class="button text-center" type="submit">Subscribe</button>
-        </form>
+        {{- partial "embedsubscriberform" . -}}
       </div>
     </div>
   </div>

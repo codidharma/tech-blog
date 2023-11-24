@@ -174,21 +174,14 @@ bannerLocation = "images/talks/banner.jpg"
 [tinyletter]
 username = "codidharma"
 
-
-[subscribe.sidebar]
+[subscribe.secondary]
 heading = "Codidharma's Weekly Newsletter"
 message = "Subscribe to cultivate serenity in your code"
-
-
-[subscribe.footer]
-heading = "Codidharma's Weekly Newsletter"
-message = "Subscribe to cultivate serenity in your code"
-
 
 [newsletter.intro]
   image = "/images/WelcomeImage.png"
   title = "Unveil the Serenity of Software Engineering!"
-  content = """ The weekly newsletter to unveil the secrets of harmonious software architecture, development, and engineering. Subscribe to cultivate serenity in your code"""
+  content = """ A weekly newsletter to unveil the secrets of harmonious software architecture, development, and engineering. Subscribe to cultivate serenity in your code"""
 
 [newsletter.techstack]
 enable = true
