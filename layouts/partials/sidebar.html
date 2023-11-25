@@ -39,6 +39,7 @@
       {{- end }}
     </ul>
     {{- end }}
+    {{- if eq $s.showRecentInSidebar true }}
     <h2 class="mt-4">{{ T "recent_posts" }}</h2>
     <ul class="flex-column">
       {{- $recent := default 8 $s.numberOfRecentPosts }}
@@ -48,6 +49,8 @@
       </li>
       {{- end }}
     </ul>
+    {{- end -}}
+    
     {{- $tagsLimit := (default 100 $s.numberOfTagsShown) }}
     {{- range $key, $value := .Site.Taxonomies }}
     {{- if gt $value 0 }}
