@@ -28,8 +28,7 @@
     <div class="post_body">
       {{- .Content }}
     </div>
-    {{- partial "subscribefooter" . -}}
-
+  
     {{- $showRelatedInArticle := true }}
     {{- if eq $s.showRelatedInArticle false }}
       {{- $showRelatedInArticle = false }}

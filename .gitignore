@@ -19,6 +19,11 @@
 
 # Go workspace file
 go.work
-resources/_gen/assets/sass/sass/main.sass_d2bdc985df0e3369a538eb4e858e857f.json
+
+resources/_gen/assets/sass/sass/main.sass_472378e5658f981e29d7d71b4f5defab
 
 resources/_gen/assets/sass/sass/main.sass_d2bdc985df0e3369a538eb4e858e857f.content
+
+public/
+resources/_gen/assets/sass/main.sass_472378e5658f981e29d7d71b4f5defab.content
+resources/_gen/assets/sass/main.sass_472378e5658f981e29d7d71b4f5defab.json
